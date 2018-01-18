@@ -1,0 +1,100 @@
+// out: ../theme.css, compress: true, strictMath: true
+
+//Imports
+@import "breakpoints.less";
+@import "colours.less";
+@import "typography.less";
+@import "mixins.less";
+@import "buttons.less";
+
+//Component Specific Imports
+@import "header.less";
+@import "search.less";
+@import "mainContentContainer.less";
+//End Imports
+
+
+.hidden-xs{
+    @media @small{
+        display:none !important;
+    }
+}
+.visible-xs{
+    @media @medium{
+        display:none !important;
+    }
+}
+
+
+.shipmentHeader{
+    
+    background:linear-gradient(rgba(121,82,179,0.9), rgba(121,82,179,0.8));
+    
+    
+    ul{
+    float:left;
+    list-style:none;
+    padding:0;
+    margin:0;
+    color:#fff;
+    }
+    
+    li{
+        float:left;
+        padding:10px 30px 10px 0px;
+        
+        p{
+            margin:0;
+            padding:0;
+        }
+    }
+    
+}
+
+.editTrackingData{
+    .trackingData{
+            padding-top:10px;
+        label{
+            font-variant:small-caps;
+        }
+        }
+  
+    .form-control{
+        color:@main-color;
+    border:none;
+    border-radius:0;
+    padding:0;
+    border-bottom:1px solid #000;
+    background:none;
+        
+        
+    
+}
+}
+
+.trackedItem{
+    background:@grey-one;
+}
+
+
+.stateButtons{
+    button{
+        margin:10px 0px 10px 10px;
+    }
+    
+}
+
+
+    
+
+
+.mapBackground {
+   
+//box-shadow: 0 2px 6px -2px gray;
+}
+
+.trackedContainer{
+    min-height:100%;
+          box-shadow: -5px 0 5px -5px black;
+    
+}
